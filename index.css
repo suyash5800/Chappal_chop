@@ -1,0 +1,690 @@
+body{
+    font-family: "Barlow Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+.nav-menu a {
+    color: rgb(217, 29, 29);
+    text-decoration: none;
+}
+
+
+/* From Uiverse.io by G4b413l */
+.card-ss svg {
+    height: 20px;
+}
+
+.card-ss {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e7e7e7;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.card-ss::before,
+.card-ss::after {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    transition: 0.25s linear;
+    z-index: 1;
+}
+
+.card-ss::before {
+    content: "";
+    left: 0;
+    justify-content: flex-end;
+    background-color: #ffdb0d;
+}
+
+.card-ss::after {
+    content: "";
+    right: 0;
+    justify-content: flex-start;
+    background-color: #ffdb0d;
+}
+
+.card-ss:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.194), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-ss:hover span {
+    opacity: 0;
+    z-index: -3;
+}
+
+.card-ss:hover::before {
+    opacity: 0.5;
+    transform: translateY(-100%);
+}
+
+.card-ss:hover::after {
+    opacity: 0.5;
+    transform: translateY(100%);
+}
+
+.card-ss span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    font-family: 'Fira Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+}
+
+.card-ss.social-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    color: rgb(255, 0, 0);
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.card-ss .social-link svg {
+    text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
+    transform: scale(1);
+}
+
+.card-ss .social-link:hover {
+    background-color: rgba(249, 244, 255, 0.774);
+    animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+    40% {
+        transform: scale(1.4);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.shop-logo {
+
+    width: 200px;
+    position: relative;
+    top: 0px;
+    left: 15px;
+
+}
+
+.icon-box {
+    margin-left: 10px;
+    width: 70%;
+}
+
+.logo-border-behind {
+    top: 10px;
+    width: 250px;
+    border: solid transparent;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 5px;
+    border-radius: 20px;
+    background-color: #ffdb0d;
+}
+
+
+.card-img-top {
+    transition: 0.5s all;
+}
+
+.card-img-top:hover {
+
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+
+.card-img-top:hover~.services-body {
+    transform: rotate(0deg);
+    top: -160px;
+    opacity: 1;
+
+}
+
+.services-body:hover~.card-img-top {
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+
+.services-body:hover {
+    transform: rotate(0deg);
+    top: -160px;
+    opacity: 1;
+
+}
+
+.services-body {
+    transform: rotate(190deg);
+    top: 100px;
+    transition: 0.9s;
+    opacity: 0;
+
+}
+
+.product-card {
+    height: 370px;
+}
+
+.rib {
+    position: relative;
+    top: 10px;
+    left: -50px;
+    width: 200px;
+    background: red;
+    color: white;
+    padding: 5px 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transform: rotate(-45deg);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pc-img img {
+    transition: 0.9s all;
+}
+
+.pc-img img:hover {
+
+    transform: scale(1.1);
+
+}
+
+.section-five{
+    height: 700px;
+    width: 50%;
+}
+
+
+.outer-border {
+    border: double rgb(0, 0, 0);
+    background-color: #e6f32f;
+    top: -350px;
+}
+
+.wear-comfort-2 img {
+    filter: grayscale(100%);
+    right: 150px;
+    transition: 0.5s all;
+}
+
+.wear-comfort-2 img:hover {
+    filter: grayscale(0%);
+
+}
+
+
+.wear-comfort {
+
+    border: dotted black 2px;
+    height: 250px;
+    top: 200px;
+    left: 160px;
+
+}
+
+
+
+.buttons {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid rgb(252, 252, 255);
+    border-radius: 2px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.buttons:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #e3f32f;
+    z-index: -1;
+
+
+}
+
+.buttons:hover,
+button:focus {
+    color: rgb(0, 0, 0);
+    border: solid transparent;
+}
+
+.buttons:hover:before,
+button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.buttons:active {
+    transform: scale(0.9);
+}
+
+h2,
+h4 {
+    border-left: 20px solid #e6f32f;
+    width: fit-content;
+    justify-self: center;
+
+}
+
+video {
+    position: relative;
+    left: 130px;
+    right: 0px;
+    border-radius: 150px 0 150px 0;
+    min-width: 80%;
+    min-height: 100%;
+    transition: 0.4s all;
+}
+
+video:hover {
+    border-radius: 0px 150px 0px 150px;
+
+}
+
+
+.form-control {
+    background-color: rgb(104, 134, 216);
+    border: none;
+
+}
+
+
+
+
+#email::placeholder {
+    color: white;
+    /* Change color here */
+}
+
+#email:active {
+    border: white;
+}
+
+#email:focus {
+    border-color: white;
+    outline: none;
+}
+
+a {
+    color: #ffdb0d;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+}
+
+/* Fade in */
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 0.1em;
+    background-color: rgb(235, 235, 235);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+a:hover::after,
+a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
+/* Slide in */
+a {
+    overflow: hidden;
+}
+
+a::after {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+}
+
+a:hover::after,
+a:focus::after {
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-item span {
+    color: #ffe138;
+    text-shadow: -8px 4px #f80000;
+}
+
+.carousel-item {
+    height: 660px;
+}
+
+
+
+.carousel-caption {
+    position: absolute;
+    bottom: 200px;
+    left: 200px;
+    color: white;
+    z-index: 10;
+    font-family: 'Work Sans', sans-serif;
+    transform: translateX(-100%);
+    animation: slideIn 1s ease-in-out forwards;
+
+}
+
+.carousel-item img {
+    position: relative;
+    bottom: 400px;
+    width: 100%;
+}
+
+
+.slide-one-text {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+}
+
+.carousel-caption p {
+    font-size: 24px;
+}
+
+.carousel-caption span {
+    font-weight: bold;
+    font-size: 80px;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translatey(-500%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Optional: Media query to adjust for smaller screens */
+@media (max-width: 768px) {
+    .carousel-caption {
+        bottom: 10px;
+        /* Reduce space for smaller screens */
+        left: 10px;
+    }
+}
+
+
+
+/* Section-why-you-chooes-us */
+
+.List-row {
+    list-style-type: none;
+}
+
+.sp-bg {
+    padding: 7px;
+
+    background-color: #e3f32f;
+}
+
+
+.icon-box i {
+    color: #e6f32f;
+    font-size: 50px;
+}
+
+.flex-whatsapp {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+
+}
+
+
+
+
+/* tab screen */
+@media screen and (max-width:1441px) {
+    .product-card {
+        height: 250px;
+    }
+
+    .outer-border {
+        top: -100px;
+    }
+
+    .carousel-item {
+        height: 400px;
+    }
+
+    .card {
+        border: none;
+    }
+
+    .carousel-caption {
+        bottom: 80px;
+    }
+
+    .shop-logo {
+        width: 120px;
+        left: 30px;
+
+
+
+
+
+    }
+
+    .logo-border-behind {
+        top: 20px;
+        width: 190px;
+
+    }
+
+    .wear-comfort {
+        width: 400px;
+
+
+    }
+
+    .wear-comfort-2 img {
+        top: -200px;
+        left: 70px;
+    }
+
+    video {
+
+        left: 100px;
+    }
+
+    .carousel-item img {
+        top: -120px;
+    }
+
+}
+
+
+
+
+/* phone screen */
+@media screen and (max-width:426px) {
+    .product-card {
+        height: 200px;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+
+    .outer-border {
+        top: 0px;
+    }
+
+    .wear-comfort-2 img {
+
+        left: 40px;
+        right: 0px;
+        top: -200px;
+    }
+
+    .wear-comfort {
+        width: 240px;
+        border: dotted black 2px;
+        height: 250px;
+        top: 300px;
+        left: 80px;
+
+    }
+
+    .wear-comfort-mid {
+        width: 80%;
+        margin-left: 35px;
+
+    }
+
+    video {
+        left: 40px;
+        right: 0px;
+        border-radius: 150px 0 150px 0;
+        width: 80%;
+        height: 100%;
+
+    }
+
+    .carousel-item {
+        height: 150px;
+        /* Adjust this value to the height you prefer */
+    }
+
+    .carousel-inner span {
+        font-size: 20px;
+    }
+
+    .icon-box i {
+        font-size: 20px;
+    }
+
+    .icon-body span {
+        font-size: 15px;
+    }
+
+    .icon-body p {
+        font-size: 10px;
+    }
+
+    .icon-box {
+        width: 155px;
+    }
+
+    .circle-poster {
+        height: 230px;
+        position: relative;
+        right: 12px;
+    }
+
+    .carousel-caption p {
+        font-size: 10px;
+    }
+
+    .carousel-caption span {
+        text-shadow: -3px 2px 0px #f80000;
+    }
+
+    .carousel-item {
+        height: 320px;
+
+    }
+
+    .carousel-item img {
+        top: 0px;
+
+    }
+
+    .card {
+        border: none;
+    }
+
+    /* .card-row {
+        gap: 10px;
+    } */
+
+    .carousel-caption {
+        bottom: 20%;
+        left: 10px;
+    }
+
+    .buttons {
+        font-size: 10px;
+    }
+
+    .shop-logo {
+        left: 5px;
+        width: 145px;
+
+    }
+
+    .logo-border-behind {
+        width: 160px;
+    }
+
+    .flex-whatsapp {
+
+        right: 1px;
+
+    }
+
+    .section-five{
+        width: 85%;
+        margin-bottom: 180px;
+    }
+}
